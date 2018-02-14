@@ -1,0 +1,6 @@
+{
+	"modules":
+	{
+		"windfarm-home-online-home":	  {"url":"modules/website/task/home.html", "name_for_search":"Windfarm Home online questionnaire"}
+	}
+}
