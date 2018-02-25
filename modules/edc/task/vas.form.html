@@ -48,6 +48,25 @@
         <hr style='border-top:1px solid #000;'></hr>
         <div class="row row__ID ">
             <div class="col-sm control-group text-center" >
+                <span id=quest__ID>SORE JAW</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="SOREJAW_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=SOREJAW_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="SOREJAW" id="SOREJAW__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
                 <span id=quest__ID>ITCHY SKIN</span>
             </div>
         </div>
@@ -77,6 +96,25 @@
             <div class="col-sm-8 control-group">
                 <div class="slidecontainer" id=BLUR_con__ID >
                   <input type="range" min="0" max="100" class="slider" name="BLUR" id="BLUR__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>STOMACH ACHE</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="STOMACH_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=STOMACH_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="STOMACH" id="STOMACH__ID"  >
                 </div>
             </div>
             <div class="col-sm-2 control-group text-right" >
@@ -314,6 +352,25 @@
         <hr style='border-top:1px solid #000;'></hr>
         <div class="row row__ID ">
             <div class="col-sm control-group text-center" >
+                <span id=quest__ID>HAND TREMBLE OR SHAKE</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="TREMBLE_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=TREMBLE_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="TREMBLE" id="TREMBLE__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
                 <span id=quest__ID>DISRUPTION WHILE FALLING ASLEEP</span>
             </div>
         </div>
@@ -399,6 +456,9 @@ function F__ID(){
         $('<style>#DISRUPTEDSLEEP_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
         $('<style>#AWAKEN_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
         $('<style>#ANXIETY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#STOMACH_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#TREMBLE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#SOREJAW_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
     })
     $('#HEADACHES__ID').on('click',function(){
         $('<style>#HEADACHES_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
@@ -475,6 +535,18 @@ function F__ID(){
     $('#ANXIETY__ID').on('click',function(){
         $('<style>#ANXIETY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
         $('#ANXIETY_req__ID').val("OK")
+    })
+    $('#STOMACH__ID').on('click',function(){
+        $('<style>#STOMACH_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#STOMACH_req__ID').val("OK")
+    })
+    $('#TREMBLE__ID').on('click',function(){
+        $('<style>#TREMBLE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#TREMBLE_req__ID').val("OK")
+    })
+    $('#SOREJAW__ID').on('click',function(){
+        $('<style>#SOREJAW_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#SOREJAW_req__ID').val("OK")
     })
     //--------------------------------------------------------
     var N1,N2;
