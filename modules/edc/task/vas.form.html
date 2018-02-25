@@ -1,37 +1,373 @@
 <section id=form_container__ID>
     <div id=header__ID>
-	Visual Analouge Scale
+	Visual Analogue Scale
 	</div>
 	<form id=F__ID>
+        <div class="container-fluid"><br>
+            <span id=quest__ID>Residents living within the area of Wind turbines present with complaints of the following symptoms.<br>
+                    After each symptom listed, please click along the line in which best describes your current state and symptom.<br></span>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
         <div class="row row__ID ">
-            <div class="col-sm-2 control-group" >
-                <span id=quest__ID>left side</span>
-            </div>
-            <div class="col-sm-8 control-group">
-                <div class="slidecontainer" id=rd >
-                  <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </div>
-            <div class="col-sm-2 control-group " >
-                <span id=quest__ID>left side</span>
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>HEADACHE</span>
             </div>
         </div>
-
-        <hr style='border-top:1px solid #727b84;'></hr>
         <div class="row row__ID ">
             <div class="col-sm-2 control-group" >
-                <span id=quest__ID>left side</span>
+                <span id=quest__ID>Not at all</span><input type="text" id="HEADACHES_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
             </div>
             <div class="col-sm-8 control-group">
-                <div class="slidecontainer" id=rd2 >
-                  <input type="range" min="0" max="100" value="50" class="slider" id="myRange2">
+                <div class="slidecontainer" id=HEADACHES_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="HEADACHES" id="HEADACHES__ID"  >
                 </div>
             </div>
-            <div class="col-sm-2 control-group " >
-                <span id=quest__ID>left side</span>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
             </div>
         </div>
-
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>RINGING IN THE EARS</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="RINGING_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=RINGING_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="RINGING" id="RINGING__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>ITCHY SKIN</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="ITCH_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=ITCH_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="ITCH" id="ITCH__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>BLURRED VISION</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="BLUR_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=BLUR_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="BLUR" id="BLUR__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>DIZZINESS</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="DIZZY_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=DIZZY_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="DIZZY" id="DIZZY__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>RACING HEART</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="HEART_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=HEART_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="HEART" id="HEART__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>VERTIGO</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="VERTIGO_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=VERTIGO_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="VERTIGO" id="VERTIGO__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>NAUSEA</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="NAUSEA_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=NAUSEA_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="NAUSEA" id="NAUSEA__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>TIREDNESS</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="TIREDNESS_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=TIREDNESS_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="TIREDNESS" id="TIREDNESS__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>FEELING FAINT</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="FAINT_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=FAINT_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="FAINT" id="FAINT__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>SLEEPINESS</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="SLEEPINESS_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=SLEEPINESS_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="SLEEPINESS" id="SLEEPINESS__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>DIFFICULTY CONCENTRATING</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="CONCENTRATING_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=CONCENTRATING_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="CONCENTRATING" id="CONCENTRATING__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>DIFFICULTY REMEMBERING</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="MEMORY_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=MEMORY_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="MEMORY" id="MEMORY__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>FATIGUE</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="FATIGUE_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=FATIGUE_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="FATIGUE" id="FATIGUE__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>IRRITABILITY</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="IRRITABILITY_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=IRRITABILITY_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="IRRITABILITY" id="IRRITABILITY__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>MUSCLE SPASMS</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="MUSCLE_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=MUSCLE_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="MUSCLE" id="MUSCLE__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>DISRUPTION WHILE FALLING ASLEEP</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="DISRUPTEDSLEEP_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=DISRUPTEDSLEEP_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="DISRUPTEDSLEEP" id="DISRUPTEDSLEEP__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>AWAKENING FROM SLEEP</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="AWAKEN_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=AWAKEN_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="AWAKEN" id="AWAKEN__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
+        <hr style='border-top:1px solid #000;'></hr>
+        <div class="row row__ID ">
+            <div class="col-sm control-group text-center" >
+                <span id=quest__ID>ANXIETY</span>
+            </div>
+        </div>
+        <div class="row row__ID ">
+            <div class="col-sm-2 control-group" >
+                <span id=quest__ID>Not at all</span><input type="text" id="ANXIETY_req__ID" required style="width:1px;height:1px;background:rgba(151,164,181,0.95);border:0"  >
+            </div>
+            <div class="col-sm-8 control-group">
+                <div class="slidecontainer" id=ANXIETY_con__ID >
+                  <input type="range" min="0" max="100" class="slider" name="ANXIETY" id="ANXIETY__ID"  >
+                </div>
+            </div>
+            <div class="col-sm-2 control-group text-right" >
+                <span id=quest__ID>Worst I can imagine</span>
+            </div>
+        </div>
         <hr style='border-top:1px solid #727b84;'></hr>
 		<br>
     	<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
@@ -44,16 +380,101 @@ function F__ID(){
     //--------------------------------------------------------
     $('#D__ID').on('load',function(){
         $("#F__ID")[0].reset();
-        $('<style>#rd input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
-        $('<style>#rd2 input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#HEADACHES_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#RINGING_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#ITCH_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#BLUR_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#DIZZY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#HEART_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#VERTIGO_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#NAUSEA_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#TIREDNESS_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#FAINT_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#SLEEPINESS_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#CONCENTRATING_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#MEMORY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#FATIGUE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#IRRITABILITY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#MUSCLE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#DISRUPTEDSLEEP_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#AWAKEN_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
+        $('<style>#ANXIETY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 0px; height: 0px; background: #4CAF50; cursor: pointer; }</style>').appendTo('head');
     })
-    $('#myRange').on('click',function(){
-        $('<style>#rd input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
-        //alert($('#myRange').val())
+    $('#HEADACHES__ID').on('click',function(){
+        $('<style>#HEADACHES_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#HEADACHES_req__ID').val("OK")
     })
-    $('#myRange2').on('click',function(){
-        $('<style>#rd2 input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
-        //alert($('#myRange').val())
+    $('#RINGING__ID').on('click',function(){
+        $('<style>#RINGING_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#RINGING_req__ID').val("OK")
+    })
+    $('#ITCH__ID').on('click',function(){
+        $('<style>#ITCH_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#ITCH_req__ID').val("OK")
+    })
+    $('#BLUR__ID').on('click',function(){
+        $('<style>#BLUR_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#BLUR_req__ID').val("OK")
+    })
+    $('#DIZZY__ID').on('click',function(){
+        $('<style>#DIZZY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#DIZZY_req__ID').val("OK")
+    })
+    $('#HEART__ID').on('click',function(){
+        $('<style>#HEART_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#HEART_req__ID').val("OK")
+    })
+    $('#VERTIGO__ID').on('click',function(){
+        $('<style>#VERTIGO_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#VERTIGO_req__ID').val("OK")
+    })
+    $('#NAUSEA__ID').on('click',function(){
+        $('<style>#NAUSEA_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#NAUSEA_req__ID').val("OK")
+    })
+    $('#TIREDNESS__ID').on('click',function(){
+        $('<style>#TIREDNESS_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#TIREDNESS_req__ID').val("OK")
+    })
+    $('#FAINT__ID').on('click',function(){
+        $('<style>#FAINT_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#FAINT_req__ID').val("OK")
+    })
+    $('#SLEEPINESS__ID').on('click',function(){
+        $('<style>#SLEEPINESS_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#SLEEPINESS_req__ID').val("OK")
+    })
+    $('#CONCENTRATING__ID').on('click',function(){
+        $('<style>#CONCENTRATING_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#CONCENTRATING_req__ID').val("OK")
+    })
+    $('#MEMORY__ID').on('click',function(){
+        $('<style>#MEMORY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#MEMORY_req__ID').val("OK")
+    })
+    $('#FATIGUE__ID').on('click',function(){
+        $('<style>#FATIGUE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#FATIGUE_req__ID').val("OK")
+    })
+    $('#IRRITABILITY__ID').on('click',function(){
+        $('<style>#IRRITABILITY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#IRRITABILITY_req__ID').val("OK")
+    })
+    $('#MUSCLE__ID').on('click',function(){
+        $('<style>#MUSCLE_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#MUSCLE_req__ID').val("OK")
+    })
+    $('#DISRUPTEDSLEEP__ID').on('click',function(){
+        $('<style>#DISRUPTEDSLEEP_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#DISRUPTEDSLEEP_req__ID').val("OK")
+    })
+    $('#AWAKEN__ID').on('click',function(){
+        $('<style>#AWAKEN_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#AWAKEN_req__ID').val("OK")
+    })
+    $('#ANXIETY__ID').on('click',function(){
+        $('<style>#ANXIETY_con__ID input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 5px; height: 25px; background: #000; cursor: pointer; }</style>').appendTo('head');
+        $('#ANXIETY_req__ID').val("OK")
     })
     //--------------------------------------------------------
     var N1,N2;
@@ -134,7 +555,7 @@ function F__ID(){
 }
 #form_container__ID{
     padding-top:50px;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 
