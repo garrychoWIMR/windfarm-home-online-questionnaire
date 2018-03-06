@@ -6,6 +6,7 @@
 		"wns-s":    {"table_id":"91000004","url":"/modules/edc/task/wns.html","form_module":"wns-s-form"},"wns-s-form": {"table_id":"91000004","url":"/modules/edc/task/wns.form.html"},
 		"shiftwork-s":    {"table_id":"91000057","url":"/modules/edc/task/shiftwork.html","form_module":"shiftwork-s-form"},"shiftwork-s-form": {"table_id":"91000057","url":"/modules/edc/task/shiftwork.form.html"},
 		"medication-s":    {"table_id":"91000058","url":"/modules/edc/task/medication.html","form_module":"medication-s-form"},"medication-s-form": {"table_id":"91000058","url":"/modules/edc/task/medication.form.html"},
+		"sleep-disorders-and-patterns-s":    {"table_id":"91000072","url":"/modules/edc/task/sleep-disorders-and-patterns.html","form_module":"sleep-disorders-and-patterns-s-form"},"sleep-disorders-and-patterns-s-form": {"table_id":"91000072","url":"/modules/edc/task/sleep-disorders-and-patterns.form.html"},
 		"medical-history-s":    {"table_id":"91000059","url":"/modules/edc/task/medical-history.html","form_module":"medical-history-s-form"},"medical-history-s-form": {"table_id":"91000059","url":"/modules/edc/task/medical-history.form.html"},
 		"insomnia-severity-index-s":    {"table_id":"91000005","url":"/modules/edc/task/insomnia-severity-index.html","form_module":"insomnia-severity-index-s-form"},"insomnia-severity-index-s-form": {"table_id":"91000005","url":"/modules/edc/task/insomnia-severity-index.form.html"},
 		"cardiovascular-sleep-illness-s":    {"table_id":"91000022","url":"/modules/edc/task/cardiovascular-sleep-illness.html","form_module":"cardiovascular-sleep-illness-s-form"},"cardiovascular-sleep-illness-s-form": {"table_id":"91000022","url":"/modules/edc/task/cardiovascular-sleep-illness.form.html"},
@@ -54,6 +55,7 @@
 					{"table_id":"91000057","task_name":"Screening - Shiftwork Questionnaire"},
 					{"table_id":"91000004","task_name":"Screening - Weinstein’s Noise Sensitivity Scale (WNS)"},
 				    {"table_id":"91000058","task_name":"Screening - Medication"},
+					{"table_id":"91000072","task_name":"Screening - Sleep Disorders and Patterns Questionnaire"},
 				    {"table_id":"91000059","task_name":"Screening - Medical History"},
 				    {"table_id":"91000005","task_name":"Screening - Insomnia Severity Index"}
 				],
@@ -73,28 +75,28 @@
 				    {"table_id":"91000026","task_name":"Baseline - N-back"}
 				],
 				"3 Month":[
-					{"table_id":"91000033","task_name":"3Month - Sleep Disorders and Patterns Questionnaire"},
-					{"table_id":"91000052","task_name":"3Month - Warwick Edinburgh Mental Well-being Scale (WEMWBS)"},
-					{"table_id":"91000015","task_name":"3Month - Kessler-10"},
-					{"table_id":"91000009","task_name":"3Month - Epworth Sleepiness Scale"},
-					{"table_id":"91000007","task_name":"3Month - Insomnia Severity Index"},
-					{"table_id":"91000012","task_name":"3Month - DASS-21"},
-					{"table_id":"91000048","task_name":"Baseline - Visual Analogue Scale"},
-					{"table_id":"91000068","task_name":"Baseline - Noise Annoyance Scale"},
-					{"table_id":"91000030","task_name":"3Month - Tower of London"},
-					{"table_id":"91000027","task_name":"3Month - N-back"}
+					{"table_id":"91000033","task_name":"3 Month - Sleep Disorders and Patterns Questionnaire"},
+					{"table_id":"91000052","task_name":"3 Month - Warwick Edinburgh Mental Well-being Scale (WEMWBS)"},
+					{"table_id":"91000015","task_name":"3 Month - Kessler-10"},
+					{"table_id":"91000009","task_name":"3 Month - Epworth Sleepiness Scale"},
+					{"table_id":"91000007","task_name":"3 Month - Insomnia Severity Index"},
+					{"table_id":"91000012","task_name":"3 Month - DASS-21"},
+					{"table_id":"91000048","task_name":"3 Month - Visual Analogue Scale"},
+					{"table_id":"91000068","task_name":"3 Month - Noise Annoyance Scale"},
+					{"table_id":"91000030","task_name":"3 Month - Tower of London"},
+					{"table_id":"91000027","task_name":"3 Month - N-back"}
 				],
 				"6 Month":[
-					{"table_id":"91000034","task_name":"6Month - Sleep Disorders and Patterns Questionnaire"},
-					{"table_id":"91000053","task_name":"6Month - Warwick Edinburgh Mental Well-being Scale (WEMWBS)"},
-					{"table_id":"91000016","task_name":"6Month - Kessler-10"},
-					{"table_id":"91000060","task_name":"6Month - Insomnia Severity Index"},
-					{"table_id":"91000010","task_name":"6Month - Epworth Sleepiness Scale"},
-					{"table_id":"91000013","task_name":"6Month - DASS-21"},
-					{"table_id":"91000049","task_name":"Baseline - Visual Analogue Scale"},
-					{"table_id":"91000069","task_name":"Baseline - Noise Annoyance Scale"},
-				    {"table_id":"91000031","task_name":"6Month - Tower of London"},
-				    {"table_id":"91000028","task_name":"6Month - N-back"}
+					{"table_id":"91000034","task_name":"6 Month - Sleep Disorders and Patterns Questionnaire"},
+					{"table_id":"91000053","task_name":"6 Month - Warwick Edinburgh Mental Well-being Scale (WEMWBS)"},
+					{"table_id":"91000016","task_name":"6 Month - Kessler-10"},
+					{"table_id":"91000060","task_name":"6 Month - Insomnia Severity Index"},
+					{"table_id":"91000010","task_name":"6 Month - Epworth Sleepiness Scale"},
+					{"table_id":"91000013","task_name":"6 Month - DASS-21"},
+					{"table_id":"91000049","task_name":"6 Month - Visual Analogue Scale"},
+					{"table_id":"91000069","task_name":"6 Month - Noise Annoyance Scale"},
+				    {"table_id":"91000031","task_name":"6 Month - Tower of London"},
+				    {"table_id":"91000028","task_name":"6 Month - N-back"}
 				],
 				"6 Month":[
 				    {"table_id":"91000070","task_name":"Practice - N-back"}

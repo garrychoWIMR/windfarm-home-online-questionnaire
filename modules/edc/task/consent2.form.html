@@ -1,0 +1,83 @@
+<section class="w3s">
+    <div id=toolbar__ID class="w3-padding-8 w3-grey w3-padding-left w3-normal" >
+        <a id=back__ID class="w3-btn w3-dark-grey w3-hover-black w3-text-white w3-round-large "  >Back</a> <a id=save__ID  class="w3-btn w3-dark-grey w3-hover-black w3-text-white w3-round-large" >Save & Back</a> <span class=tab__ID></span><span id=name__ID></span>
+    </div>
+    <div class="w3-container w3-content-2">
+        <form id=F__ID >
+            <div class="w3-xlarge w3-center w3-padding-16">Consent</div>
+            <div class="w3-container " id=tr_participant__ID style='display:none' data-id=Participant data-custom=1>
+                <input class="w3-input w3-half" name=Participant  id=Participant__ID  type=text placeholder='select a partcipant...' />
+                <input class="w3-quarter w3-border-0 w3-text-grey w3-center" name=Participant_uid id=Participant_uid__ID type=text readonly  />
+                <u  class="w3-quarter w3-btn w3-white w3-border-bottom " id=Participant_r__ID>Remove</u>
+            </div>
+            <div class="w3-container w3-padding-16" data-id=first_language style='vertical-align:middle' data-custom=1 >
+                <label> Thank you for completing our questionnaires for the Wind Farms home study.
+                    <br><br>If you are eligible to continue to the next stages of the study, a member of our research team will be in contact with you.
+                    <br> After that, we will send you a watch like device called an actiwatch and a sleep diary which we will require you to wear 7 days.
+                    <br><br>
+                    <br><br>If you have any questions, please call 9114 0493 or send an email to windfarmhomestudy@woolcock.org.au
+                </label>
+            </div>
+            <div class="w3-half w3-center">Actiwatch</div>
+            <div class="w3-half w3-center">Sleep Diary</div>
+            <div class="w3-half" style="padding-left: 80px!important;" >
+            <figure class=""><img id=logo__ID src="__BASE__/woolcock-imr/windfarm_screening/images/actiwatch.jpg" style='width:100px' ></figure>
+        </div>
+        <div class="w3-half" >
+            <figure class=""><img id=logo__ID src="__BASE__/woolcock-imr/windfarm_screening/images/sleepdiary.png" style='width:300px'></figure>
+        </div>
+            <div class="w3-container w3-padding-16" data-id=Consent style='vertical-align:middle' data-custom=1 >
+                <div class="w3-col">
+                    <input class="w3-radio" type="radio" name="Consent" id=Consent_Y__ID value=Yes \>
+                    <label  for=Consent_Y__ID> Yes, I hereby agree if eligible for the next stages to be contacted by a member of the research team to be sent an actiwatch to wear and a sleep diary to fill in before the home visits. </label>
+                    <br><input  class="w3-radio"  type="radio" name="Consent" id=Consent_N__ID value=No \>
+                    <label  for=Consent_N__ID> No, I do not wish to take part in this research study</label>
+                </div>
+            </div>
+        </form>
+        <a id=save2__ID  class="w3-btn w3-dark-grey w3-hover-black w3-text-white w3-round-large" >Save &amp; Back</a>
+
+    </div>
+</section>
+<script>
+    function F__ID(){
+        //----------------------------------
+        VmInclude:__BASE__/vmiis/Common-Code/grid/form.js
+        VmInclude:__BASE__/vmiis/Common-Code/clinical_trials/participant.js
+        //----------------------------------
+        $('#D__ID').on('load',function(){
+            _init();
+            _field_process();
+            _set_participant_field();
+            _task_fields=$vm.vm['__ID'].op.grid_to_form_parameters.task_fields;
+            custom_field_process();
+        })
+        //----------------------------------
+        var custom_field_process=function(){
+            $('#F__ID div[data-custom=1]').each(function(){
+                var field=$(this).attr('data-id');
+                switch(field){
+                    case "Participant":
+                        $(this).find("input[name='"+field+"']").val(_records[I].Participant);
+                        $(this).find("input[name='"+field+"_uid']").val(_records[I].Participant_uid);
+                    break;
+                    case "Consent":
+                        $(this).parent().find("input[name='"+field+"'][value='"+_records[I][field]+"']").prop('checked', true);
+                        $(this).parent().find("input[name='"+field+"']").on('click',function(){
+                            _set_value(this.value,_records,I,field);
+                        })
+                    break;
+                }
+            })
+        }
+        //----------------------------------
+        _before_submit_form=function(){
+            if($('#F__ID input[name=Consent]:checked').val()===undefined){ $vm.alert("Please answer the consent question");	return false;}
+            return true;
+        }
+        //----------------------------------
+    }
+</script>
+<style>
+VmInclude:__BASE__/woolcock-imr/windfarm_screening/assets/w3.css
+</style>
