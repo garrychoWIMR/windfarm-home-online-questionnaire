@@ -729,7 +729,7 @@
                     </div>
                     <div class="col- control-group pl-3">
                         <label class="control control-radio " style="width:80px">
-                                <input type="radio"  name="other_life_reguse" id=other_life_reguse__ID value=1 />
+                                <input type="radio"  name="other_life_reguse" id=other_life_reguse__ID value=1  />
                             <div class="control_indicator text-center"></div>Yes
                         </label>
                     </div>
@@ -882,7 +882,7 @@
                     </div>
                     <div class="col- control-group pl-3">
                         <label class="control control-radio " style="width:80px">
-                                <input type="radio"  name="nap" id=nap__ID value=1 />
+                                <input type="radio"  name="nap" id=nap__ID value=1 required />
                             <div class="control_indicator text-center"></div>Yes
                         </label>
                     </div>
@@ -975,6 +975,8 @@
 function F__ID(){
     VmInclude:__CURRENT_PATH__/task.independent.form.js
 //    $('input[name="OSA_CPAP_reguse"]').click(function() {alert(1)})
+
+
     $('#Question_2__ID').hide();
     $('#Question_2_CPAP__ID').hide();
     $('#OSA_CPAP_no__ID').hide();
@@ -1098,9 +1100,6 @@ function F__ID(){
         }
     }); */
 
-
-
-
     var other=function(){
         $('#Question_4__ID').hide();
         if($('input[name="diagnosis_narco"]').is(':checked')) $('#Question_4__ID').show();
@@ -1113,6 +1112,18 @@ function F__ID(){
     }
 
     _before_submit=function(record,dbv){
+        if( $('input[name="diagnosis_OSA"]').is(':checked')===false &&
+            $('input[name="diagnosis_insom"]').is(':checked')===false &&
+            $('input[name="diagnosis_narco"]').is(':checked')===false &&
+            $('input[name="diagnosis_RLS"]').is(':checked')===false &&
+            $('input[name="diagnosis_brux"]').is(':checked')===false &&
+            $('input[name="diagnosis_REM"]').is(':checked')===false &&
+            $('input[name="diagnosis_paras"]').is(':checked')===false &&
+            $('input[name="diagnosis_hypo"]').is(':checked')===false &&
+            $('input[name="diagnosis_DSPD"]').is(':checked')===false &&
+            $('input[name="diagnosis_none"]').is(':checked')===false
+        ) {$vm.alert("Please tick at least one of boxes in question 1");    return false;}
+
         return true
     }
 }
