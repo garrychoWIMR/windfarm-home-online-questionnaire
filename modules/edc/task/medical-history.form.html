@@ -14,10 +14,90 @@
                 </div>
             </div>
             <hr style='border-top:1px dot #727b84;'></hr>
-            <div class="row row__ID"><div class="col-sm control-group" style="max-width:500px"><span id=quest1__ID>Anxiety disorder</span></div><div class="col-sm control-group" style="max-width:300px"><label class="control control-checkbox"  style="width:250px"><input type="checkbox"  name="anxiety" /><div class="control_indicator text-center"></div>Tick if diagnosed</label><div><input type="text" class="form-control" name="anxiety_age" placeholder="Age of diagnosis" /></div></div></div><hr style='border-top:1px dot #727b84;'></hr>
-            <div class="row row__ID"><div class="col-sm control-group" style="max-width:500px"><span id=quest1__ID>Bipolar Disorder</span></div><div class="col-sm control-group" style="max-width:300px"><label class="control control-checkbox"  style="width:250px"><input type="checkbox"  name="bipolar" /><div class="control_indicator text-center"></div>Tick if diagnosed</label><div><input type="text" class="form-control" name="bipolar_age" placeholder="Age of diagnosis" /></div></div></div><hr style='border-top:1px dot #727b84;'></hr>
-            <div class="row row__ID"><div class="col-sm control-group" style="max-width:500px"><span id=quest1__ID>Depression</span></div><div class="col-sm control-group" style="max-width:300px"><label class="control control-checkbox"  style="width:250px"><input type="checkbox"  name="depression" /><div class="control_indicator text-center"></div>Tick if diagnosed</label><div><input type="text" class="form-control" name="depression_age" placeholder="Age of diagnosis" /></div></div></div><hr style='border-top:1px dot #727b84;'></hr>
-            <div class="row row__ID"><div class="col-sm control-group" style="max-width:500px"><span id=quest1__ID>Post-Traumatic Stress Disorder</span></div><div class="col-sm control-group" style="max-width:300px"><label class="control control-checkbox"  style="width:250px"><input type="checkbox"  name="posttrauma" /><div class="control_indicator text-center"></div>Tick if diagnosed</label><div><input type="text" class="form-control" name="posttrauma_age" placeholder="Age of diagnosis" /></div></div></div><hr style='border-top:1px dot #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group" style="max-width:500px">
+                    <span id=quest1__ID>Anxiety disorder</span>
+                </div>
+                <div class="col-sm control-group" style="max-width:300px">
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="anxiety" value=1 required />Yes
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="anxiety" value=0 />No
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <div>
+                        <input type="text" class="form-control" name="anxiety_age" placeholder="Age of diagnosis" />
+                    </div>
+                </div>
+            </div>
+            <hr style='border-top:1px dot #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group" style="max-width:500px">
+                    <span id=quest1__ID>Bipolar Disorder</span>
+                </div>
+                <div class="col-sm control-group" style="max-width:300px">
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="bipolar" value=1 required />Yes
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="bipolar" value=0 />No
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <div>
+                        <input type="text" class="form-control" name="bipolar_age" placeholder="Age of diagnosis" />
+                    </div>
+                </div>
+            </div>
+            <hr style='border-top:1px dot #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group" style="max-width:500px">
+                    <span id=quest1__ID>Depression</span>
+                </div>
+                <div class="col-sm control-group" style="max-width:300px">
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="depression" value=1 required />Yes
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="depression" value=0 />No
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <div>
+                        <input type="text" class="form-control" name="depression_age" placeholder="Age of diagnosis" />
+                    </div>
+                </div>
+            </div>
+            <hr style='border-top:1px dot #727b84;'></hr>
+            <div class="row row__ID">
+                <div class="col-sm control-group" style="max-width:500px">
+                    <span id=quest1__ID>Post-Traumatic Stress Disorder</span>
+                </div>
+                <div class="col-sm control-group" style="max-width:300px">
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="posttrauma" value=1 required />Yes
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <label class="control control-radio"  style="width:250px">
+                        <input type="radio"  name="posttrauma" value=0 />No
+                        <div class="control_indicator text-center">
+                        </div>
+                    </label>
+                    <div>
+                        <input type="text" class="form-control" name="posttrauma_age" placeholder="Age of diagnosis" />
+                    </div>
+                </div>
+            </div>
+            <hr style='border-top:1px dot #727b84;'></hr>
             <div class="row row__ID">
                 <div class="col-sm control-group" style="max-width:500px">
                     <span id=quest1__ID>Other psychiatric disease</span>
@@ -40,7 +120,41 @@
 <script>
 function F__ID(){
     VmInclude:__CURRENT_PATH__/task.independent.form.js
+    $('input[name="anxiety"]').click(function() {
+        if($('input[name="anxiety"]:checked').val()=='1') {
+            $('input[name="anxiety_age"]').prop('required',true);
+        }
+        else {
+            $('input[name="anxiety_age"]').prop('required',false);
+        }
+    });
+    $('input[name="bipolar"]').click(function() {
+        if($('input[name="bipolar"]:checked').val()=='1') {
+            $('input[name="bipolar_age"]').prop('required',true);
+        }
+        else {
+            $('input[name="bipolar_age"]').prop('required',false);
+        }
+    });
+    $('input[name="depression"]').click(function() {
+        if($('input[name="depression"]:checked').val()=='1') {
+            $('input[name="depression_age"]').prop('required',true);
+        }
+        else {
+            $('input[name="depression_age"]').prop('required',false);
+        }
+    });
+    $('input[name="posttrauma"]').click(function() {
+        if($('input[name="posttrauma"]:checked').val()=='1') {
+            $('input[name="posttrauma_age"]').prop('required',true);
+        }
+        else {
+            $('input[name="posttrauma_age"]').prop('required',false);
+        }
+    });
+
     _before_submit=function(record,dbv){
+
         //record.kessler=(parseInt(record.kessler_1)+parseInt(record.kessler_2)+parseInt(record.kessler_3)+parseInt(record.kessler_4)+parseInt(record.kessler_5)+parseInt(record.kessler_6)+parseInt(record.kessler_7)+parseInt(record.kessler_8)+parseInt(record.kessler_9)+parseInt(record.kessler_10)).toString();
         return true
     }
